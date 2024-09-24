@@ -1,0 +1,159 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Closet Cloud</string>
+    <string name="title_closet">My Closet</string>
+    <string name="title_plan">Plan Outfits</string>
+    <string name="title_profile">My Profile</string>
+    <!-- TODO: Remove or change this placeholder text
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+     -->
+
+    //Create outfit strings
+    <string name="create_outfit">Create Outfit</string>
+    <string name="edit_outfit">Edit Outfit</string>
+    <string name="event_name">Event Name</string>
+    <string name="location">Location</string>
+    <string name="date">Date</string>
+    <string name="date_fill_in_helper">Date (mm/dd/yyyy)</string>
+    <string name="random_button">RANDOM</string>
+    <string name="choose_button">CHOOSE</string>
+    <string name="save_fit_button">SAVE FIT</string>
+    <string name="no_outfit_chosen">No outfit chosen</string>
+    <string name="no_outfit_chosen_text">Choose an outfit or let us decide with Random in order to create an outfit for this event.</string>
+    <string name="exit">EXIT</string>
+
+    //random page strings
+    <string name="random_title">Random</string>
+    //color and all color and season string already made below
+    <string name="generate_button">GENERATE</string>
+    <string name="generate_again_button">GENERATE AGAIN</string>
+    //save buttons text already defined below too
+
+    //choose page strings
+    <string name="choose_jacket_button">CHOOSE JACKET</string>
+    <string name="choose_top_button">CHOOSE TOP/DRESS</string>
+    <string name="choose_bottom_button">CHOOSE BOTTOM</string>
+    <string name="choose_shoes_button">CHOOSE SHOES</string>
+    <string name="choose_bag_button">CHOOSE BAG</string>
+    <string name="choose_accessories_button">CHOOSE ACCESSORIES</string>
+    //save button text already done below
+
+
+    //Sort strings
+    <string name="sort_header">Sort by</string>
+    <string name="sort_option1">A-Z</string>
+    <string name="sort_option2">Recently worn</string>
+    <string name="sort_option3">Most worn</string>
+    <string name="sort_option4">Least worn</string>
+    <string name="sort_button_name">SORT</string>
+
+    //Filter strings
+    <string name="color">Color</string>
+    <string name="category">Category</string>
+    <string name="tank_top">Tank Top</string>
+    <string name="t_shirt">T-Shirt</string>
+    <string name="long_sleeves_blouse">Long Sleeves/Blouse</string>
+    <string name="sweatshirt_sweater">Sweatshirt/Sweater</string>
+    <string name="jacket">Jacket</string>
+    <string name="dress">Dress</string>
+    <string name="pant">Pant</string>
+    <string name="leggings">Leggings</string>
+    <string name="skirt">Skirt</string>
+    <string name="shorts">Shorts</string>
+    <string name="shoes">Shoes</string>
+    <string name="bag">Bag</string>
+    <string name="accessories">Accessories</string>
+    <string name="season">Season</string>
+    <string name="fall">Fall</string>
+    <string name="winter">Winter</string>
+    <string name="spring">Spring</string>
+    <string name="summer">Summer</string>
+    <string name="in_laundry">In laundry</string>
+    <string name="apply_filter_button">APPLY FILTER</string>
+
+    <string name="logout">Logout</string>
+    <string name="add">Add</string>
+    <string name="enter_name">Room Location</string>
+    <string name="enter_cap">Room Capacity</string>
+    <string name="save">SAVE</string>
+    <string name="quit">QUIT</string>
+    <string name="enter">ENTER</string>
+    <string name="leave">* LEAVE *</string>
+    <string name="storage">A5_CONTEXT_SP</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="login_title">Login</string>
+    <string name="signup_title">Signup</string>
+    <string name="forgot_pw_title">Forgot PW</string>
+    <string name="forgot_pw">FORGOT PW</string>
+    <string name="signup">SIGN UP</string>
+    <string name="find_pw">FIND PW</string>
+    <string name="my_closet">My Closet</string>
+    <string name="sort">Sort</string>
+    <string name="filter">Filter</string>
+    <string name="numWears">Times Worn:</string>
+    <string name="add_item">Add</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="edit_item">Edit</string>
+    <string name="user_stats">Most Worn Item:</string>
+    <string name="user_stats2">Least Worn Item:</string>
+    <string name="plan_outfits">Plan Outfits</string>
+    <string name="see_history">SEE HISTORY</string>
+    <string name="outfit_history">Outfit History</string>
+    <string name="Email">Email</string>
+    <string name="choose">Choose</string>
+    <string name="edit">Edit</string>
+    <string name="laundry">Laundry</string>
+    <string name="delete">delete</string>
+    <string name="save_event">SAVE EVENT</string>
+
+    <string-array name="categories">
+        <item>Tank Top</item>
+        <item>T-Shirt</item>
+        <item>Long Sleeves/Blouse</item>
+        <item>Sweatshirt/Sweater</item>
+        <item>Jacket</item>
+        <item>Dress</item>
+        <item>Pants</item>
+        <item>Leggings</item>
+        <item>Skirt</item>
+        <item>Shorts</item>
+        <item>Shoes</item>
+        <item>Bag</item>
+        <item>Accessories</item>
+    </string-array>
+
+    <string-array name="seasons">
+        <item>Select Season</item>
+        <item>Fall</item>
+        <item>Winter</item>
+        <item>Spring</item>
+        <item>Summer</item>
+    </string-array>
+    <string-array name="colors">
+        <item>Select Color</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Green</item>
+        <item>Light Blue</item>
+        <item>Dark Blue</item>
+        <item>Brown</item>
+        <item>Pink</item>
+        <item>Purple</item>
+        <item>Grey</item>
+        <item>Black</item>
+        <item>White</item>
+    </string-array>
+
+</resources>

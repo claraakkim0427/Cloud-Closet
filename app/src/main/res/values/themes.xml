@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.A5_sample" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/peri</item>
+        <item name="colorPrimaryVariant">@color/navy</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/pale_grass</item>
+        <item name="colorSecondaryVariant">@color/med_grass</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:fontFamily">@font/playfair_display</item>
+        <item name="titleTextColor">@color/black</item>
+
+</style>
+    <style name="Theme.Design.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <item name="windowActionBar">false</item>-->
+        <item name="windowNoTitle">true</item>--></style>-->
+
+    <style name="Theme.Design.NoActionBar.Dialog" parent="Theme.MaterialComponents.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="BottomNavigationViewTextAppearance" parent="TextAppearance.AppCompat.Caption">
+        <item name="fontFamily">@font/playfair_display</item>
+        <item name="android:fontFamily">@font/playfair_display</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowDisablePreview">true</item>
+
+    </style>
+
+
+</resources>

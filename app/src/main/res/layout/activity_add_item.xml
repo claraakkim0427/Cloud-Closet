@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_blue">
+
+    <TextView
+        android:id="@+id/addItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="149dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/add"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/addnameLabel"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="54dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/name"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewAdd" />
+
+    <EditText
+        android:id="@+id/addeditTextName"
+        android:layout_width="303dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:background="@drawable/shape"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/playfair_display"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addnameLabel" />
+
+    <TextView
+        android:id="@+id/addColorTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/color"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/addeditTextName"
+        app:layout_constraintTop_toBottomOf="@+id/addeditTextName" />
+
+    <TextView
+        android:id="@+id/addSeasonTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/season"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/addColorTitle"
+        app:layout_constraintTop_toBottomOf="@+id/addeditTextName" />
+
+    <CheckBox
+        android:id="@+id/addwinter_option"
+        android:layout_width="83dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/winter"
+        android:buttonTint="@color/checkbox_selector"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/addfall_option"
+        app:layout_constraintTop_toBottomOf="@+id/addfall_option" />
+
+    <CheckBox
+        android:id="@+id/addsummer_option"
+        android:layout_width="122dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/summer"
+        android:buttonTint="@color/checkbox_selector"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/addspring_option"
+        app:layout_constraintTop_toBottomOf="@+id/addspring_option" />
+
+    <CheckBox
+        android:id="@+id/addspring_option"
+        android:layout_width="122dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/spring"
+        android:buttonTint="@color/checkbox_selector"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/addwinter_option"
+        app:layout_constraintTop_toBottomOf="@+id/addwinter_option" />
+
+    <CheckBox
+        android:id="@+id/addfall_option"
+        android:layout_width="71dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/fall"
+        android:buttonTint="@color/checkbox_selector"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/addSeasonTitle"
+        app:layout_constraintTop_toBottomOf="@+id/addSeasonTitle" />
+
+    <TextView
+        android:id="@+id/addCategoryTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/category"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/purple_add"
+        app:layout_constraintTop_toBottomOf="@+id/purple_add" />
+
+    <ImageButton
+        android:id="@+id/additemBackButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewAdd"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:color="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addItemTitle"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <CheckBox
+        android:id="@+id/red_add"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintTop_toBottomOf="@id/addColorTitle"
+        app:layout_constraintStart_toStartOf="@id/addColorTitle"
+        android:buttonTint="@android:color/holo_red_dark" />
+
+    <CheckBox
+        android:id="@+id/orange_add"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintStart_toEndOf="@+id/red_add"
+        app:layout_constraintTop_toBottomOf="@id/addColorTitle"
+        android:buttonTint="#FF5722" />
+
+    <CheckBox
+        android:id="@+id/yellow_add"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintStart_toEndOf="@+id/orange_add"
+        app:layout_constraintTop_toBottomOf="@id/addColorTitle"
+        android:buttonTint="#FFEB3B" />
+
+    <CheckBox
+        android:id="@+id/green_add"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintStart_toEndOf="@+id/yellow_add"
+        app:layout_constraintTop_toBottomOf="@id/addColorTitle"
+        android:buttonTint="#4CAF50" />
+
+    <CheckBox
+        android:id="@+id/light_blue_add"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintStart_toStartOf="@+id/red_add"
+        app:layout_constraintTop_toBottomOf="@id/red_add"
+        android:buttonTint="#03A9F4" />
+
+    <CheckBox
+        android:id="@+id/dark_blue_add"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintStart_toEndOf="@+id/light_blue_add"
+        app:layout_constraintTop_toBottomOf="@id/red_add"
+        android:buttonTint="#3F51B5" />
+
+    <CheckBox
+        android:id="@+id/brown_add"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintStart_toEndOf="@+id/dark_blue_add"
+        app:layout_constraintTop_toBottomOf="@id/red_add"
+        android:buttonTint="#714435" />
+
+    <CheckBox
+        android:id="@+id/pink_add"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintStart_toEndOf="@+id/brown_add"
+        app:layout_constraintTop_toBottomOf="@id/red_add"
+        android:buttonTint="#FF699C" />
+
+    <CheckBox
+        android:id="@+id/purple_add"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintStart_toStartOf="@+id/light_blue_add"
+        app:layout_constraintTop_toBottomOf="@id/light_blue_add"
+        android:buttonTint="#9C27B0" />
+
+    <CheckBox
+        android:id="@+id/grey_add"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintStart_toEndOf="@+id/purple_add"
+        app:layout_constraintTop_toBottomOf="@id/light_blue_add"
+        android:buttonTint="#807F7F" />
+
+    <CheckBox
+        android:id="@+id/black_add"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintStart_toEndOf="@+id/grey_add"
+        app:layout_constraintTop_toBottomOf="@id/light_blue_add"
+        android:buttonTint="#000000" />
+
+    <CheckBox
+        android:id="@+id/white_add"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintStart_toEndOf="@+id/black_add"
+        app:layout_constraintTop_toBottomOf="@id/light_blue_add"
+        android:buttonTint="@color/white" />
+
+
+    <Spinner
+        android:id="@+id/addspinner"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/playfair_display"
+        android:textColor="@color/black"
+        android:background="@drawable/shape"
+        app:layout_constraintStart_toStartOf="@+id/addCategoryTitle"
+        app:layout_constraintTop_toBottomOf="@+id/addCategoryTitle" />
+
+    <Button
+        android:id="@+id/add_item_add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/peri"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/add"
+        app:layout_constraintStart_toEndOf="@+id/addspinner"
+        app:layout_constraintTop_toBottomOf="@+id/addsummer_option" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "271574247671",
+    "project_id": "closetcloud-a50ac",
+    "storage_bucket": "closetcloud-a50ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271574247671:android:244e1a8fa17c715276cbf2",
+        "android_client_info": {
+          "package_name": "com.example.a5_sample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATWcoip1dDMKEEPsE15OJ3eFKgxeXmF-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271574247671:android:0d871937f9280adc76cbf2",
+        "android_client_info": {
+          "package_name": "com.example.closetcloud"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATWcoip1dDMKEEPsE15OJ3eFKgxeXmF-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

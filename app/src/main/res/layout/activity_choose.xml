@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chooseOutfitPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_blue">
+
+    <TextView
+        android:id="@+id/chooseHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="149dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/choose"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/chooseJacketButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/chooseBackButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="651dp"
+        android:background="@drawable/back_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chooseHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/chooseJacketButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="@color/peri"
+        android:text="@string/choose_jacket_button"
+        app:layout_constraintBottom_toTopOf="@+id/chooseTopDressButton"
+        app:layout_constraintEnd_toStartOf="@+id/jacketIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseHeader" />
+
+    <Button
+        android:id="@+id/chooseTopDressButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="@color/peri"
+        android:text="@string/choose_top_button"
+        app:layout_constraintBottom_toTopOf="@+id/chooseBottomButton"
+        app:layout_constraintEnd_toStartOf="@+id/top_dressIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseJacketButton" />
+
+    <Button
+        android:id="@+id/chooseBottomButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="@color/peri"
+        android:text="@string/choose_bottom_button"
+        app:layout_constraintBottom_toTopOf="@+id/chooseShoesButton"
+        app:layout_constraintEnd_toStartOf="@+id/bottomIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseTopDressButton" />
+
+    <Button
+        android:id="@+id/chooseShoesButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="@color/peri"
+        android:text="@string/choose_shoes_button"
+        app:layout_constraintBottom_toTopOf="@+id/chooseBagButton"
+        app:layout_constraintEnd_toStartOf="@+id/shoesIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseBottomButton" />
+
+    <Button
+        android:id="@+id/chooseBagButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="45dp"
+        android:backgroundTint="@color/peri"
+        android:text="@string/choose_bag_button"
+        app:layout_constraintBottom_toTopOf="@+id/chooseAccessoriesButton"
+        app:layout_constraintEnd_toStartOf="@+id/bagIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseShoesButton" />
+
+    <Button
+        android:id="@+id/chooseAccessoriesButton"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="75dp"
+        android:backgroundTint="@color/peri"
+        android:text="@string/choose_accessories_button"
+        app:layout_constraintBottom_toTopOf="@+id/saveOutfitButton"
+        app:layout_constraintEnd_toStartOf="@+id/accIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseBagButton" />
+
+    <Button
+        android:id="@+id/saveOutfitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="@color/peri"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseAccessoriesButton" />
+
+    <ImageView
+        android:id="@+id/jacketIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/top_dressIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chooseJacketButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jacket" />
+
+    <ImageView
+        android:id="@+id/top_dressIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/chooseTopDressButton"
+        app:layout_constraintTop_toBottomOf="@+id/jacketIcon"
+        app:srcCompat="@drawable/top_dress" />
+
+    <ImageView
+        android:id="@+id/bottomIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/shoesIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/chooseBottomButton"
+        app:layout_constraintTop_toBottomOf="@+id/top_dressIcon"
+        app:srcCompat="@drawable/bottom" />
+
+    <ImageView
+        android:id="@+id/shoesIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintBottom_toTopOf="@+id/bagIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/chooseShoesButton"
+        app:layout_constraintTop_toBottomOf="@+id/bottomIcon"
+        app:srcCompat="@drawable/shoes" />
+
+    <ImageView
+        android:id="@+id/bagIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/accIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/chooseBagButton"
+        app:layout_constraintTop_toBottomOf="@+id/shoesIcon"
+        app:srcCompat="@drawable/bag" />
+
+    <ImageView
+        android:id="@+id/accIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="195dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/chooseAccessoriesButton"
+        app:layout_constraintTop_toBottomOf="@+id/bagIcon"
+        app:srcCompat="@drawable/acc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

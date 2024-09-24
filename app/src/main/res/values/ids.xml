@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="additemBackButton" type="id" />
+    <item name="addeditTextName" type="id" />
+    <item name="editeditTextName" type="id"/>
+
+</resources>

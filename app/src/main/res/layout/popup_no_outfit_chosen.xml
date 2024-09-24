@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white">
+
+    //TODO:add border to constraint
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="284dp"
+        android:layout_height="198dp"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="266dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginBottom="19dp"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/no_outfit_chosen"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="250dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="17dp"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/no_outfit_chosen_text"
+            android:textColor="#5A5A5A"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="179dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="11dp"
+            android:backgroundTint="@color/peri"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/exit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

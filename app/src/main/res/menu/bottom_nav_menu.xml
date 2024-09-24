@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_closet"
+        android:icon="@drawable/closet_icon"
+        android:title="@string/title_closet" />
+
+    <item
+        android:id="@+id/navigation_plan"
+        android:icon="@drawable/calendar_icon"
+        android:title="@string/title_plan" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/profile_icon"
+        android:title="@string/title_profile" />
+
+</menu>

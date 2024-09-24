@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sky_blue"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="-23dp">
+
+
+        <TextView
+            android:id="@+id/editoutfitsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="141dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/edit_outfit"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/addoutfitBackButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/back_button"
+            app:layout_constraintBottom_toTopOf="@+id/eventNameInput"
+            app:layout_constraintEnd_toStartOf="@+id/editoutfitsTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="336dp"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/event_name"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/eventNameInput"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editoutfitsTitle" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/eventNameInput"
+            android:layout_width="370dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/playfair_display"
+            android:hint="@string/event_name"
+            android:paddingStart="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="357dp"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/location"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/locationInput"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eventNameInput" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/locationInput"
+            android:layout_width="370dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/playfair_display"
+            android:hint="@string/location"
+            android:paddingStart="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="383dp"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/date"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/textInputEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/locationInput" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText"
+            android:layout_width="370dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="33dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/playfair_display"
+            android:hint="@string/date_fill_in_helper"
+            android:paddingStart="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/jacketIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <Button
+            android:id="@+id/saveFitBotton"
+            android:layout_width="137dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="167dp"
+            android:layout_marginTop="470dp"
+            android:layout_marginEnd="168dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/peri"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/save_fit_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
+
+        <Button
+            android:id="@+id/editchooseJacketButton"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/peri"
+            android:text="@string/choose_jacket_button"
+            app:layout_constraintBottom_toTopOf="@+id/editchooseTopDressButton"
+            app:layout_constraintEnd_toStartOf="@+id/jacketIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
+
+        <Button
+            android:id="@+id/editchooseBottomButton"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/peri"
+            android:text="@string/choose_bottom_button"
+            app:layout_constraintBottom_toTopOf="@+id/editchooseShoesButton"
+            app:layout_constraintEnd_toStartOf="@+id/bottomIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editchooseTopDressButton" />
+
+        <ImageView
+            android:id="@+id/shoesIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="70dp"
+            app:layout_constraintBottom_toTopOf="@+id/bagIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/editchooseShoesButton"
+            app:layout_constraintTop_toBottomOf="@+id/bottomIcon"
+            app:srcCompat="@drawable/shoes" />
+
+        <Button
+            android:id="@+id/editchooseShoesButton"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/peri"
+            android:text="@string/choose_shoes_button"
+            app:layout_constraintBottom_toTopOf="@+id/editchooseBagButton"
+            app:layout_constraintEnd_toStartOf="@+id/shoesIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editchooseBottomButton" />
+
+        <Button
+            android:id="@+id/editchooseBagButton"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/peri"
+            android:text="@string/choose_bag_button"
+            app:layout_constraintBottom_toTopOf="@+id/editchooseAccessoriesButton"
+            app:layout_constraintEnd_toStartOf="@+id/bagIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editchooseShoesButton" />
+
+        <ImageView
+            android:id="@+id/bagIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="70dp"
+            app:layout_constraintBottom_toTopOf="@+id/accIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/editchooseBagButton"
+            app:layout_constraintTop_toBottomOf="@+id/shoesIcon"
+            app:srcCompat="@drawable/bag" />
+
+        <ImageView
+            android:id="@+id/accIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="88dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/editchooseAccessoriesButton"
+            app:layout_constraintTop_toBottomOf="@+id/bagIcon"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/acc" />
+
+        <Button
+            android:id="@+id/editchooseTopDressButton"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/peri"
+            android:text="@string/choose_top_button"
+            app:layout_constraintBottom_toTopOf="@+id/editchooseBottomButton"
+            app:layout_constraintEnd_toStartOf="@+id/top_dressIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editchooseJacketButton" />
+
+        <ImageView
+            android:id="@+id/top_dressIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="70dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottomIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/editchooseTopDressButton"
+            app:layout_constraintTop_toBottomOf="@+id/jacketIcon"
+            app:srcCompat="@drawable/top_dress" />
+
+        <ImageView
+            android:id="@+id/jacketIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="396dp"
+            android:layout_marginEnd="70dp"
+            app:layout_constraintBottom_toTopOf="@+id/top_dressIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editchooseJacketButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/jacket" />
+
+        <Button
+            android:id="@+id/editchooseAccessoriesButton"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="34dp"
+            android:backgroundTint="@color/peri"
+            android:text="@string/choose_accessories_button"
+            app:layout_constraintBottom_toTopOf="@+id/saveFitBotton"
+            app:layout_constraintEnd_toStartOf="@+id/accIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editchooseBagButton" />
+
+        <ImageView
+            android:id="@+id/bottomIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="70dp"
+            app:layout_constraintBottom_toTopOf="@+id/shoesIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/editchooseBottomButton"
+            app:layout_constraintTop_toBottomOf="@+id/top_dressIcon"
+            app:srcCompat="@drawable/bottom" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

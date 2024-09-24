@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".ui.user.FirstPageActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.user.FindPwActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.user.LoginActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.user.SignupActivity"
+            android:theme="@style/Theme.Design.NoActionBar"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.plan.AddOutfitActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true" />
+        <activity
+            android:name=".ui.plan.OutfitItem$EditOutfitActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.plan.RandomActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.plan.choose.ChooseActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.plan.choose.ChooseAccessoriesActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.plan.choose.ChooseBagActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.plan.choose.ChooseBottomsActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.plan.choose.ChooseJacketActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.plan.choose.ChooseShoesActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.plan.choose.ChooseTopDressActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true" />
+
+
+        <activity
+            android:name=".ui.closet.FilterActivity"
+            android:theme="@style/CustomDialogTheme"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.closet.AddItemActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.closet.EditItemActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.closet.SortActivity"
+            android:theme="@style/CustomDialogTheme"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.plan.edit.EditChooseShoesActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true"
+            />
+
+        <activity
+            android:name=".ui.plan.edit.EditChooseAccessoriesActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true"
+            />
+
+        <activity
+            android:name=".ui.plan.edit.EditChooseBagActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true"
+            />
+        <activity
+            android:name=".ui.plan.edit.EditChooseBottomsActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true"
+            />
+        <activity
+            android:name=".ui.plan.edit.EditChooseJacketActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true"
+            />
+        <activity
+            android:name=".ui.plan.edit.EditChooseTopDressActivity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:exported="true"
+            />
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+</manifest>

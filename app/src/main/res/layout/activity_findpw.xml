@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_blue"
+    tools:context=".ui.user.LoginActivity">
+
+    <TextView
+        android:id="@+id/forgotpwTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/forgot_pw_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <ImageButton
+        android:id="@+id/BackButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pwNameLabel"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="201dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextpwName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextpwName"
+        android:layout_width="303dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/shape"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/playfair_display"
+        android:hint="@string/name"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/pwEmailLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwNameLabel" />
+
+    <TextView
+        android:id="@+id/pwEmailLabel"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/email"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editTextpwEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextpwName" />
+
+    <EditText
+        android:id="@+id/editTextpwEmail"
+        android:layout_width="303dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/shape"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/playfair_display"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/findpwButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwEmailLabel" />
+
+    <Button
+        android:id="@+id/findpwButton"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="183dp"
+        android:backgroundTint="@color/peri"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/find_pw"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextpwEmail" />
+
+    <Button
+        android:id="@+id/findpwloginButton"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="186dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="183dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/playfair_display"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findpwButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
