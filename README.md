@@ -1,16 +1,17 @@
 Meeting & Notes:
+
 3/28: Setup
 - Run through of Sprint 1
 - Clone repository into code editors
 - Create basic files/folders
 
 4/3: Final Work Organization
-- Signup page, xml edits, nav functions, Firebase for My Closet: Evie
-- First page, Login page, My Closet page layout (xmls), nav functions, Firebase debugging: Clara
-- Firebase setup with entries and login/signup implementations and nav debugging: Lulu
-- Bottom nav menu, filter function, testing: Mirra
+- Signup page, xml edits, nav functions, Firebase for My Closet
+- First page, Login page, My Closet page layout (xmls), nav functions, Firebase debugging
+- Firebase setup with entries and login/signup implementations and nav debugging
+- Bottom nav menu, filter function, testing
 
-4/4: Firebase checkin (Lulu and Mirra)
+4/4: Firebase checkin
 
 4/7: Mentor Meeting
 - Push task 3 (Piazza post)
